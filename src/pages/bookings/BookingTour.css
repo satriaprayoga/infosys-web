@@ -1,0 +1,318 @@
+.book-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .book-form-wrapper {
+      width: 600px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 10px 50px #555;
+      background-color: #d3e0d7;
+    }
+    
+    form {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0.8rem;
+    }
+    
+    .book-form-wrapper h1,h2 {
+      text-align: center;
+      width: 100%;
+      color:  #222;
+    }
+
+    .book-form-wrapper h3,h4,h5 {
+        width: 100%;
+        color:  #222;
+        font-weight: lighter;
+      }
+    
+    .book-form-wrapper label {
+      font-size: 0.8em;
+      margin-bottom: 0.25em;
+      color: #222;
+      font-weight: bold;
+    }
+    
+    input {
+      padding: 10px 10px;
+      border-radius: 5px;
+      outline: none;
+      border: none;/*1px solid #cfcfcf;*/
+      margin-bottom: 0.1rem;
+    }
+    
+    input::placeholder {
+      font-size: 1.1em;
+      font-weight: lighter;
+      color: #999;
+    }
+    
+    input.error {
+      border: 1px solid red;
+    }
+    
+    .errorMessage {
+      color: red;
+      font-size: 0.75em;
+      display: relative;
+    }
+    
+    .firstName {
+      margin-right: 1%;
+    }
+    
+    .visitor {
+      margin-left: 1%;
+    }
+
+    .visitor input[type='button']{
+        background-color: #eeeeee;
+        min-width: 40px;
+        width: auto;
+        transition: all 300ms ease;
+    }
+
+    .visitor-wrapper .number{
+        position: relative;
+        height: 38px;
+        text-align: center;
+        width: 60px;
+        display: inline-block;
+        font-size: 13px;
+        margin: 0 0 5px;
+        resize: vertical;
+        padding: 10px 10px;
+        outline: none;
+        border: 1px solid #cfcfcf;
+        background: #fff;
+    }
+
+    .visitor .button-minus{
+        font-weight: bold;
+        height: 38px;
+        padding: 0;
+        width: 38px;
+        position: relative;
+        border: none;
+        border-radius: 0;
+    }
+
+    .visitor .button-plus{
+        font-weight: bold;
+        height: 38px;
+        padding: 0;
+        width: 38px;
+        position: relative;
+        border: none;
+        border-radius: 0;
+    }
+
+    .pickup{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pickup-container {
+        position: relative;
+        padding-left: 35px;     
+        flex-direction: row;
+      }
+
+      .pickup-wrapper{
+          flex-direction: column;
+          margin-bottom: 1rem;
+      }
+
+      .pickup-wrapper label{
+          margin-right: 10px;
+          align-self: center;
+      }
+      
+      .pickup-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+       .estArrival{
+        
+        width: 70%;
+      }
+      
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 50%;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .pickup-container:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      
+      /* When the radio button is checked, add a blue background */
+      .pickup-container input:checked ~ .checkmark {
+        background-color: #2196F3;
+      }
+      
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the indicator (dot/circle) when checked */
+      .pickup-container input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      /* Style the indicator (dot/circle) */
+      .pickup-container .checkmark:after {
+        top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+      }
+    
+    .firstName,
+    .email,
+    .visitor
+    .password {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    .visitor-wrapper{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    
+    .firstName,
+    .visitor {
+      width: 49%;
+    }
+    
+    .email,
+    .password {
+      width: 100%;
+    }
+
+    .password textarea{
+      padding: 10px 10px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      resize: none;
+      overflow: auto;
+      border-radius: 5px;
+    }
+
+    .password textarea::placeholder {
+      font-size: 1.1em;
+      font-weight: lighter;
+      color: #999;
+    }
+
+    .meetingPoint{
+        padding: 8px 15px;
+        background: rgba(50, 50, 50, 0.2);
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #cfcfcf;
+        width: 100%;
+        background: #fff;
+    }
+  
+    .remember_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .rememberMe{
+     flex-direction: row;
+    }
+    
+    .createAccount {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .createAccount button {
+      background-color: #dc3545;
+      border: #dc3545;
+      border-radius: 10px 10px 10px 10px;
+      color: #fff;
+      width: 100%;
+      margin-top: 1em;
+      padding: 8px 0px;
+      font-size: 1em;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      margin-bottom: 0.25em;
+    }
+    
+    .createAccount button:hover {
+      color: #519e8a;
+      background-color: #fff;
+      border: none;
+    }
+    
+    .createAccount small {
+      color: #999;
+      font-weight: lighter;
+    }
+  
+    .signAccount {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .signAccount button {
+      background-color: #519e8a;
+      border: #519e8a;
+      border-radius: 10px 10px 10px 10px;
+      color: #fff;
+      width: 100%;
+      margin-top: 1em;
+      padding: 8px 0px;
+      font-size: 1em;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      margin-bottom: 0.25em;
+    }
+    
+    .signAccount button:hover {
+      color: #519e8a;
+      background-color: #fff;
+      border: none;
+    }
+    
+    .signAccount small {
+      color: #fff;
+      font-weight: lighter;
+    }
